@@ -1,0 +1,53 @@
+ @override
+  Future<String> uploadImage(String userId, File userImage) async {
+    var request = http.MultipartRequest('POST', Uri.parse(AppStrings.apiURL+"user/image"));
+    request.files.add(
+        await http.MultipartFile.fromPath(
+            'file',
+            userImage.path
+        )
+    );
+    var response = await request.send();
+
+    print("response:- "+response.toString());
+    if (response.statusCode == 200) {
+      return json.decode("Image uploaded");
+    } else {
+      throw Exception("No data found");
+    }
+  }
+
+
+  class UploadImageEvent extends ProfileEvent{
+  
+
+}
+
+
+ @override
+  Stream<ProfileState> mapEventToState(ProfileEvent event) async* {
+    if (event is UploadImageEvent) {
+      yield LoadingState();
+      try {
+        print('Image Path '+event.userId);
+        String message = await repository.uploadImage(event.userId,event.userImage);
+        print(message +event.userId);
+        yield ImageUploadState(message: message);
+      } catch (e) {
+        print("error"+e.toString());
+        yield ErrorState(message: e.toString());
+      }
+    }
+
+  }
+  
+
+   Future getImage() async {
+      var image = await ImagePicker.pickImage(source: ImageSource.gallery);
+
+      setState(() {
+        _image = image;
+        _profileBloc.add(UploadImageEvent(userId: "1",userImage: _image));
+        print('Image Path $_image');
+      });
+    }

@@ -1,0 +1,230 @@
+name: tda_academy
+description: Where perspiration shapes your aspiration.
+
+# The following line prevents the package from being accidentally published to
+# pub.dev using `pub publish`. This is preferred for private packages.
+publish_to: 'none' # Remove this line if you wish to publish to pub.dev
+
+# The following defines the version and build number for your application.
+# A version number is three numbers separated by dots, like 1.2.43
+# followed by an optional build number separated by a +.
+# Both the version and the builder number may be overridden in flutter
+# build by specifying --build-name and --build-number, respectively.
+# In Android, build-name is used as versionName while build-number used as versionCode.
+# Read more about Android versioning at https://developer.android.com/studio/publish/versioning
+# In iOS, build-name is used as CFBundleShortVersionString while build-number used as CFBundleVersion.
+# Read more about iOS versioning at
+# https://developer.apple.com/library/archive/documentation/General/Reference/InfoPlistKeyReference/Articles/CoreFoundationKeys.html
+
+#uploaded ver - 1.0.5
+version: 1.0.3+6
+
+environment:
+  sdk: ">=2.7.0 <3.0.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+
+  # The following adds the Cupertino Icons font to your application.
+  # Use with the CupertinoIcons class for iOS style icons.
+  cupertino_icons: ^1.0.0
+  uuid: 2.0.4
+  percent_indicator: 2.1.1+1
+  intl: ^0.17.0
+
+  flutter_form_builder: ^6.1.0+1
+  google_fonts: ^1.1.1
+  
+  intro_slider: 2.2.9
+  configurable_expansion_tile: 1.0.0
+  timeago: 2.0.26
+  #share: 0.6.3+6
+  notification_permissions: 0.4.4
+  carousel_pro: 1.0.0
+  after_layout: 1.0.7+2
+  font_awesome_flutter: 8.7.0
+  package_info: ^0.4.3+2
+  youtube_player_flutter: ^7.0.0+7
+  youtube_parser: ^1.1.0
+  page_transition: ^1.1.7+5
+  lipsum: 1.0.1
+  fluttertoast: ^7.1.6
+  pdf_viewer_plugin: ^1.1.1
+  http: ^0.12.2
+  eva_icons_flutter: ^2.0.1
+  url_launcher: ^5.7.10
+
+  simple_animations: ^2.2.3
+  carousel_slider: ^2.3.1
+  retrofit: any
+  logger: any  #for logging purpose
+  json_annotation: any
+  rxdart: ^0.24.1
+  
+  flutter_bloc: ^6.1.1
+  equatable: ^1.2.5
+  dio: ^3.0.10
+  #not in use
+  #sms_autofill: ^1.2.3
+  shared_preferences: ^0.5.12+4
+  synchronized:
+  pretty_dio_logger: ^1.1.1
+  animations: ^1.1.2
+  permission_handler: ^5.0.1+1
+  #not in use
+  image_picker: ^0.6.7+22
+  flutter_statusbarcolor: ^0.2.3
+  #continuesly check internet connection
+  #connectivity: ^2.0.2
+  #razorpay lib
+  razorpay_flutter: ^1.2.2
+  #pdf viewer 
+  advance_pdf_viewer: any
+  path_provider: any
+
+  flutter_automation: ^1.4.0
+  flutter_html: ^1.2.0
+  html_unescape: ^1.0.2
+  #firebase messaging lib
+  firebase_messaging: ^7.0.3
+  cached_network_image: ^2.5.0
+  share: ^0.6.5+4
+  infinite_scroll_pagination: ^2.2.2
+  webview_flutter: ^1.0.7
+  vibration: ^1.7.3
+  flutter_vibrate: ^1.1.0
+  
+  
+
+
+dev_dependencies:
+  flutter_launcher_icons: ^0.8.1
+  retrofit_generator: any
+  build_runner: any
+  analyzer: '0.40.5'
+  json_serializable: any
+  flutter_test:
+    sdk: flutter
+
+# For information on the generic Dart part of this file, see the
+# following page: https://dart.dev/tools/pub/pubspec
+
+# The following section is specific to Flutter.
+flutter:
+
+  # The following line ensures that the Material Icons font is
+  # included with your application, so that you can use the icons in
+  # the material Icons class.
+  uses-material-design: true
+
+  assets:
+    - assets/json/demo.json
+    - assets/verify.png
+
+    - assets/terms.pdf
+    - assets/privacy.pdf
+
+    - assets/images/logo.png
+    - assets/images/ic_launcher_.png
+    - assets/images/1_banner.png
+    - assets/images/2_banner.png
+    - assets/images/3_banner.png
+    - assets/images/4_banner.png
+    - assets/images/lic.jpg
+    - assets/images/navy.png
+    - assets/images/quiz.png
+    - assets/images/quiz2.png
+    - assets/images/airforce.png
+    - assets/images/army.png
+    - assets/images/drdo.png
+    - assets/images/1.png
+    - assets/images/2.png
+    - assets/images/3.png
+
+    - assets/images/crops/89.png
+    - assets/images/crops/90.png
+
+    - assets/images/crops/95.png
+
+    - assets/images/crops/100.png
+    - assets/images/crops/101.png
+    - assets/images/crops/102.png
+    - assets/images/crops/103.png
+    - assets/images/crops/104.png
+    - assets/images/crops/105.png
+    - assets/images/crops/106.png
+    - assets/images/crops/107.png
+    - assets/images/crops/108.png
+    - assets/images/crops/109.png
+
+    - assets/images/crops/119.png
+    - assets/images/crops/120.png
+    - assets/images/crops/121.png
+    - assets/images/crops/122.png
+    - assets/images/crops/123.png
+    - assets/images/crops/124.png
+    - assets/images/crops/125.png
+    - assets/images/crops/126.png
+
+    - assets/images/airforce.png
+    - assets/images/navy.png
+    - assets/images/drdo.png
+    - assets/images/army.png
+
+    - assets/images/quiz.png
+    - assets/images/def.jpeg
+    - assets/images/quiz2.png
+    - assets/images/courses.png
+    - assets/images/practise.png
+    - assets/images/article.png
+
+  # An image asset can refer to one or more resolution-specific "variants", see
+  # https://flutter.dev/assets-and-images/#resolution-aware.
+
+  # For details regarding adding assets from package dependencies, see
+  # https://flutter.dev/assets-and-images/#from-packages
+
+  # To add custom fonts to your application, add a fonts section here,
+  # in this "flutter" section. Each entry in this list should have a
+  # "family" key with the font family name, and a "fonts" key with a
+  # list giving the asset and other descriptors for the font. For
+  # example:
+  fonts:
+    - family: AlataRegular
+      fonts:
+        - asset: fonts/Alata-Regular.ttf
+
+    - family: MuliVariable
+      fonts:
+        - asset: fonts/Muli-VariableFont-wght.ttf
+
+    - family: Jaldi
+      fonts:
+        - asset: fonts/Jaldi-Regular.ttf
+        - asset: fonts/Jaldi-Bold.ttf
+
+    - family: HindMadurai
+      fonts:
+        - asset: fonts/HindMadurai-Bold.ttf
+        - asset: fonts/HindMadurai-Light.ttf
+        - asset: fonts/HindMadurai-Medium.ttf
+        - asset: fonts/HindMadurai-Regular.ttf
+        - asset: fonts/HindMadurai-SemiBold.ttf
+
+    - family: Courgette
+      fonts:
+        - asset: fonts/Courgette-Regular.ttf
+
+    - family: SourceSanspro
+      fonts:
+        - asset: fonts/SourceSansPro-Light.ttf
+        - asset: fonts/SourceSansPro-Regular.ttf
+
+
+flutter_icons:
+  image_path_ios: 'assets/images/1.png'
+  image_path_android: 'assets/images/1.png'
+  android: true
+  ios: true

@@ -1,0 +1,19 @@
+
+ flutter build apk --target-platform=android-arm
+ flutter build apk --target-platform=android-arm64
+ flutter build apk --split-per-abi
+
+
+
+ keystore details
+
+avinashdhiraj@avinashs-MacBook-Air tda_academy % flutter pub pub run flutter_automation --android-sign
+enter key alias: tdaacademy
+enter dname as (CN=popupbits.com, OU=DD, O=Popup Bits Ltd., L=Kathmandu, S=Bagmati, C=NP): 
+key password: tdaacademy
+keystore password: tdaacademy
+Generating 2,048 bit RSA key pair and self-signed certificate (SHA256withRSA) with a validity of 10,000 days
+        for: CN=popupbits.com, OU=DD, O=Popup Bits Ltd., L=Kathmandu, ST=Bagmati, C=NP
+generated keystore with provided input
+key properties file created
+release configs already configured
